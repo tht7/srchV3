@@ -1,0 +1,6 @@
+/HIB(GET) -> returns the user?
+/defs(GET) -> renders the main lookup page defs and if no user renders enter.html
+/setAgreementOk(GET) -> if logged in does to srvDB.setAgreementOk(user(email)) -> mongoose
+/getAgreementOk(GET) -> if logged in from srvDB (of from default) signAgreement returns 'yes' or 'no'
+/getrecords(GET) -> if not logged in return empty object else goto srvDB.getUserRecords and pull all the Indexes that belong to the user
+/getrecords/:db(GET) ->
